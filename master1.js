@@ -92,13 +92,3 @@ if ((document.documentElement.scrollTop != 0 && lazyadsense2 === false) || (docu
 lazyadsense2 = true;
   }
 }, true);
-
-function im() {
-var imgDefer = document.getElementsByTagName('img');
-for (var i=0; i<imgDefer.length; i++) {
-if(imgDefer[i].getAttribute('data-src')) {
-imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}
-imgDefer[i].src = imgDefer[i].src.replace(/.*?:\/\//g , "https://cdn.staticaly.com/img/");
- }
-
-}window.onload = im;
